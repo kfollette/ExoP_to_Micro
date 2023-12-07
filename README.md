@@ -1,4 +1,4 @@
-# Initial README for the Exoplanets to Microbes project!
+# README for the Exoplanets to Microbes project!
 
 Follette Lab Project being worked on by Jess Labossiere.
 
