@@ -87,39 +87,17 @@ def imtolist(list0, list1, list2):
     written by Jess Labossiere October 2023
     """
 
-    #Takes ch01/red images
-    im1 = []
-    array_orig1 = []
-    array_sub1 = []
-    length1 = len(list1)
-    for i in range(length1):
-        im1.append(Image.open(cwd + '/' + list1[i]))     #opens images into list
-        width1, height1 = im1.size
-        array_orig1.append(np.array(im1[i]))              #makes an numpy array out of the tif images
-        array_sub1.append(np.zeros((width1,height1,3)))         #creates an array of the size of the image arrays, with only zeros
-
-    #Takes ch02/green images
-    im2 = []
-    array_orig2 = []
-    array_sub2 = []
-    length2 = len(list2)
-    for i in range(length2):
-        im2.append(Image.open(cwd + '/' + list2[i]))     #opens images into list
-        width2, height2 = im2.size
-        array_orig2.append(np.array(im2[i]))              #makes an numpy array out of the tif images
-        array_sub2.append(np.zeros((width2,height2,3)))         #creates an array of the size of the image arrays, with only zeros
-
-    #Takes ch00/blue images
-    im0 = []
-    array_orig0 = []
-    array_sub0 = []
-    length0 = len(list0)
-    for i in range(length0):
-        im0.append(Image.open(cwd + '/' + list0[i]))     #opens images into list
-        width3, height3 = im0.size
-        array_orig0.append(np.array(im0[i]))              #makes an numpy array out of the tif images
-        array_sub0.append(np.zeros((width3,height3,3)))         #creates an array of the size of the image arrays, with only zeros
-
+    imlist = []
+    imlist.append(list0)
+    imlist.append(list1)
+    imlist.append(list2)
+    
+    array_orig = []
+    array_sub = []
+    length = len(imlist)
+    for i in range(length):
+        array_orig.append(np.array(imlist[i]))              #makes an numpy array out of the tif images
+        array_sub.append(np.zeros((length,length,3)))         #creates an array of the size of the image arrays, with only zeros
 
 
 
