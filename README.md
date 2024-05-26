@@ -1,6 +1,6 @@
 # README for the Exoplanets to Microbes project!
 
-Follette Lab Project being worked on by Jess Labossiere.
+Follette Lab Project worked on by Jess Labossiere and Kinsey Cronin.
 
 ## Introduction
 Exoplanets to Microbes is an inter-sectional project between the fields of Astronomy and Biology. The goal of this project is to create an algorithm that subtracts the mineral and organic matter signals, leaving just the microbial cells in the final image. Currently, we have created a working algorithm that subtracts these signals efficiently but we are continuing to update the code to provide a harsher subtraction.
@@ -22,4 +22,9 @@ How to add files to Jupyter Notebook Directory:
 
 ## Technologies
 The Jupyter Notebook requires Python 3.8.8.
+
+## What next?  
+Right now the tiff to fits file function is not working correctly so we are unable to work with the images in DS9 (an astronomy software used frequently to work with images). 
+Clean up and fix the background subtraction. 
+
 
